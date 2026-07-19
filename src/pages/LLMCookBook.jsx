@@ -1436,24 +1436,21 @@ export default function App() {
   const [search, setSearch] = useState("");
 
   return (
-    <div
-      style={{
-        display: "flex", flexDirection: "column",
-        height: "100vh", fontFamily: "var(--font-sans)",
-        background: "var(--color-background-tertiary)",
-        color: "var(--color-text-primary)",
-      }}
-    >
+    <div style={{
+      display: "flex", flexDirection: "column",
+      height: "100vh", fontFamily: "var(--font-sans, system-ui, sans-serif)",
+      // background: "var(--color-background-tertiary, radial-gradient(circle at top, #0f172a, #020617);)",
+      background: "var(--color-background-tertiary, radial-gradient(circle at top, #0f172a, #020617);)",
+      color: "var(--color-text-primary)",
+    }}>
       <Header />
       <div style={{ display: "flex", flex: 1, overflow: "hidden" }}>
-        <div
-          style={{
-            width: 320, minWidth: 260, padding: "20px 20px",
-            borderRight: "0.5px solid var(--color-border-tertiary)",
-            background: "var(--color-background-primary)",
-            overflowY: "auto",
-          }}
-        >
+        <div style={{
+          width: 320, minWidth: 260, padding: "20px 20px",
+          borderRight: "0.5px solid var(--color-border-tertiary)",
+          background: "var(--color-background-primary)",
+          overflowY: "auto",
+        }}>
           <Sidebar
             recipes={RECIPES}
             selected={selected}
@@ -1477,3 +1474,4 @@ export default function App() {
     </div>
   );
 }
+

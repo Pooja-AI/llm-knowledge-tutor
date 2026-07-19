@@ -17,32 +17,25 @@ function Navbar() {
       <div className="menu">
         <a
           href="https://pooja-ai.github.io/IntelliCatalyst-Labs/#/"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           Home
         </a>
 
         <a
           href="https://pooja-ai.github.io/IntelliCatalyst-Labs/#/projects"
-          target="_blank"
-          rel="noopener noreferrer"
+         
         >
           Projects
         </a>
 
         <a
           href="https://pooja-ai.github.io/IntelliCatalyst-Labs/#/books"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           Books
         </a>
 
         <a
           href="https://pooja-ai.github.io/IntelliCatalyst-Labs/#/about"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           About
         </a>
